@@ -18,7 +18,7 @@ targets = pd.read_csv("branch_targets.csv")
 df['subscribed'] = (df['y'] == 'yes').astype(int)
 
 st.title("🏦 Bank Commercial Performance Dashboard")
-st.markdown("**Banco de Portugal | Term Deposit Campaign Analysis**")
+st.markdown("**UCI Bank Marketing Dataset (Portuguese retail bank) | Term Deposit Campaign Analysis**")
 st.divider()
 
 # ── Section 1: Headline KPIs ──────────────────────────────
@@ -170,5 +170,5 @@ st.plotly_chart(fig5, use_container_width=True)
 st.divider()
 
 # ── Footer ─────────────────────────────────────────────────
-st.caption("Data: Banco de Portugal Bank Marketing Dataset | "
-           "Analysis: Clara Mujuni | Banking Data Analyst Portfolio")
+st.caption("Data: UCI Bank Marketing Dataset (Portuguese retail bank); branches and targets simulated | "
+           "Analysis: Ayebazibwe Clare Mujuni | Banking Data Analyst Portfolio")
