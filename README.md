@@ -1,7 +1,12 @@
 # Bank Commercial Performance Dashboard
-**Banking Data Analyst Portfolio Project | Clare Mujuni**
+**Banking Data Analyst Portfolio Project | Ayebazibwe Clare Mujuni**
 ## Live Dashboard
 👉 [View Live Dashboard](https://bankcommercialdashbord-flrjqywvhm8yz3nqpjh7tp.streamlit.app/)
+
+*Hosted on Streamlit Community Cloud — if the app has been idle it may ask you to wake it up, which takes about 30 seconds. Preview:*
+
+![Branch target attainment](fig2_branch_attainment.png)
+![Conversion rate by segment](fig3_segment_cvr.png)
 
 ---
 
@@ -13,7 +18,9 @@ varies across the portfolio.
 
 ## What This Project Does
 End-to-end commercial data analysis pipeline built on a real banking 
-dataset (Banco de Portugal, 41,188 records), covering:
+dataset (UCI Bank Marketing — term deposit campaigns of a Portuguese retail bank, 41,188 records), covering:
+
+> **Data note:** Branch assignments, deposit values and branch targets (`branch_targets.csv`) were added to the public dataset to simulate a branch network; they are illustrative.
 
 - Data quality audit and cleaning with documented business decisions
 - Commercial KPI engineering (CVR, revenue, target attainment)
@@ -44,8 +51,9 @@ dataset (Banco de Portugal, 41,188 records), covering:
 ## Project Structure
 
 - `bank_marketing_project.ipynb` — EDA and data cleaning
-- `02_sql_analysis.ipynb` — SQL analysis notebook
+- `sqi_analysis.ipynb` — SQL analysis notebook
 - `dashboard.py` — Interactive Streamlit dashboard
+- `bank-additional-full.csv` / `bank-additional-names.txt` — Original UCI dataset and field descriptions
 - `bank_commercial_full.csv` — Raw enriched dataset
 - `bank_commercial_clean.csv` — Cleaned dataset
 - `branch_targets.csv` — Branch targets table
